@@ -1,0 +1,8 @@
+public List<Integer> fibonacciSeries(Integer n) {
+    If (n == 1) return new List<Integer> {1};
+    List<Integer> f = new List<Integer> {1, 1};
+    If (n == 2) Return f;
+
+    for (Integer i = 2; i < n; i++) f.add(f[i-2] + f[i-1]);
+    return f;
+}
