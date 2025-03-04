@@ -1,0 +1,15 @@
+public Boolean companionPlants(List<String> plants) {
+    String l = 'lettuce', cu = 'cucumbers', o = 'onions', ca = 'carrots';
+    String t = 'tomatoes', p1 = '', p2 = '';
+ 
+    If (plants.size() == 1) Return False;
+    For (Integer i = 0; i < plants.size()-1; i++) {
+        p1 = plants[i]; 
+        p2 = plants[i+1];
+        If (!((p1 == o && (p2 == l || p2 == ca || p2 == t)) ||
+            (p1 == l && (p2 == o || p2 == cu)) ||
+            (p1 == cu && p2 == l) ||
+            ((p1 == ca || p1 == t) && p2 == o))) Return False;
+    }
+    Return True;    
+}
