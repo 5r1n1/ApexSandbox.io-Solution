@@ -1,0 +1,12 @@
+public static Integer longestDistinctSubstring(String str, Integer k){ 
+    Integer longest = 0;
+    For (Integer i = 0; i < str.length() - longest; i++) {
+        Boolean TooMany = False;
+        For (Integer j = i+1; j < str.length()+1 && !TooMany; j++) {
+            String ss = str.substring(i, j);
+            If (new Set<Integer>(ss.getChars()).size() > k) TooMany = True;
+            Else longest = Math.max (longest, ss.length());
+        }
+    }
+    Return longest;
+}
