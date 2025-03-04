@@ -1,0 +1,9 @@
+public List<Integer> twoSum(List<Integer> nums, Integer target){
+    For (Integer i = 0; i < nums.size(); i++)
+        If (nums[i] * 2 > target) break;
+        Else If (nums[i] * 2 == target && nums[i+1] == nums[i]) 
+            Return New List<Integer>{i, i+1};
+        Else If (nums[i] * 2 != target && nums.contains(target-nums[i]))
+            Return New List<Integer>{i, nums.indexOf(target-nums[i])};
+    Return Null;
+}
