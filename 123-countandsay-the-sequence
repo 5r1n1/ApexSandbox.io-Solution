@@ -1,0 +1,17 @@
+public string countAndSay(integer N) {
+    If (N == 1) Return '1';
+    Else {
+        String tStr = '', iStr = countAndSay(N-1);
+        Integer count = 1;
+        String num = iStr.subString(0, 1);
+        For (Integer i = 1; i < iStr.length(); i++) {
+            if (num == iStr.subString(i, i+1)) count++;
+            Else {
+                tStr = tStr + String.valueOf(count) + num;
+                count = 1;
+                num = iStr.subString(i, i+1);
+            }
+        }
+        Return tStr + String.valueOf(count) + num;
+    }
+}
