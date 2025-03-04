@@ -1,0 +1,13 @@
+public boolean isSorted(List<Integer> numbers) {
+    If (numbers.size() < 3) Return True;
+    Integer i = 0;
+    For (i = 0; i < numbers.size()-1; i++) If (numbers [i] != numbers[i+1]) break;
+    If (i > numbers.size() - 2) Return True;
+
+    If (numbers [i] < numbers[i+1]) {
+        For (;i < numbers.size()-1; i++) If (numbers [i] > numbers[i+1]) Return False;
+    }
+    Else
+        For (;i < numbers.size()-1; i++) If (numbers [i] < numbers[i+1]) Return False;
+    Return True;
+}
