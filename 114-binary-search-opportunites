@@ -1,0 +1,11 @@
+public static Integer search(List<Opportunity> opportunities, Integer target){
+    Integer mid, left = 0, right = opportunities.size(), amt;
+    While (left != right) {
+        mid = (left + right) / 2;
+        amt = (Integer) opportunities[mid].amount;
+        if (amt == target) Return mid;
+        If (amt < target) left = mid + 1;
+        Else right = mid - 1;
+    }
+    Return -1;
+}
