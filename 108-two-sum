@@ -1,0 +1,12 @@
+public static List<Integer> twoSum(List<Integer> nums, Integer target) {
+    Integer i;
+    For (i = 0; i < nums.size(); i++)
+        if (nums[i] * 2 != target && nums.contains(target-nums[i])) break;
+        Else if (nums[i] * 2 == target) {
+            Integer[] nums2 = nums.clone();
+            nums2.remove(i);
+            if (nums2.contains(nums[i])) 
+                Return New List<Integer>{i, nums2.indexOf(target-nums[i]) + 1};
+        }
+    Return New List<Integer>{i, nums.indexOf(target-nums[i])};
+}
