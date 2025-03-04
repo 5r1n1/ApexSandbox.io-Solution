@@ -1,0 +1,5 @@
+public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
+    Set<Integer> result = set1.clone();
+    result.retainAll(set2);
+    Return result;
+}
