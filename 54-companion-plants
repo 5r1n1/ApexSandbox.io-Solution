@@ -1,0 +1,9 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    String l = 'lettuce', cu = 'cucumbers', o = 'onions', ca = 'carrots';
+    String t = 'tomatoes', p1 = plant1, p2 = plant2;
+ 
+    return (p1 == o && (p2 == l || p2 == ca || p2 == t)) ||
+    (p1 == l && (p2 == o || p2 == cu)) ||
+    (p1 == cu && p2 == l) ||
+    ((p1 == ca || p1 == t) && p2 == o);
+}
