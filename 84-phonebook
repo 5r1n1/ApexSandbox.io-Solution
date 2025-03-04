@@ -1,0 +1,7 @@
+public Map<String, String> phonebook(List<Contact> contacts) {
+    Map<String, String> result = new Map<String, String>();
+    For (Contact con : contacts)
+        If (String.isBlank(con.Name) || String.isBlank(con.Phone)) continue;
+        Else result.put(con.Name, con.Phone);
+    Return result;
+}
