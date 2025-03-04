@@ -1,0 +1,14 @@
+public Integer secondLargest(List<Integer> numbers) {
+/*
+    Integer largest = -2147483647 - 1;
+    For (Integer num : numbers) if (num > largest) largest = num;
+    Integer secondLargest = -2147483647 - 1;
+    For (Integer num : numbers)
+        if (num == largest) continue;
+        Else if (num > secondLargest) secondLargest = num;
+    Return secondLargest;
+*/
+    List<Integer> listNums = new List<Integer>(new Set<Integer>(numbers));
+    listNums.sort();
+    return listNums[listNums.size()-2];
+}
