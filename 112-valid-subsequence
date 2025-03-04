@@ -1,0 +1,11 @@
+public Boolean isSubSequence(String s1, String s2){
+    Integer j = 0, s1l = s1.length(), s2l = s2.length();
+    For (Integer i = 0; i < s1l; i++) {
+        While (j < s2l)
+            if (s1.charAt(i) == s2.charAt(j)) break; 
+            Else j++;
+        If (j == s2l) Return False; 
+        Else j++;
+    }
+    Return True;
+}
