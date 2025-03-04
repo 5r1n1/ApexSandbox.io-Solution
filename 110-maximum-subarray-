@@ -1,0 +1,9 @@
+public static Integer maxSubArraySum(List<Integer> nums, Integer target){
+    Integer sum = 0, largest = -2147483647 - 1;
+    For (Integer i = 0; i <= nums.size() - target; i++) {
+        sum = 0;
+        For (Integer j = 0; j < target; j++) sum = sum + nums[i+j];
+        If (sum > largest) largest = sum;
+    }
+    Return largest;
+}
