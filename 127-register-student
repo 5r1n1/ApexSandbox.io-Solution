@@ -1,0 +1,10 @@
+public String registerStudent(String name, String phone, String email) {
+    Insert new apxio__student__c (
+        Name = name, 
+        apxio__Email__c = email,
+        apxio__Phone__c = phone);
+    return [
+        SELECT apxio__Registration_Number__c 
+        FROM apxio__Student__c 
+        where apxio__Email__c = :email].apxio__Registration_Number__c;
+}
