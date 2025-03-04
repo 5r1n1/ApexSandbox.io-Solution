@@ -1,0 +1,3 @@
+public void insertAtStart(String cityName, List<String> cities) {
+    If (cities.isEmpty()) cities.add(cityName); Else cities.add(0, cityName);
+}
