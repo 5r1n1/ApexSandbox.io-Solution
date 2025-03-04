@@ -1,0 +1,6 @@
+public Integer sumToN(Integer n) {
+    // return n*(n+1)/2 <- This is a programming problem, not a math problem
+    Integer sum = 0;
+    for (Integer i = 1; i <= n; i++) sum += i;
+    return sum;
+}
