@@ -1,0 +1,10 @@
+public static List<Integer> mergeLists(List<Integer> list1, List<Integer> list2){
+    List<Integer> mergedList = new List<Integer>();
+    Integer i1 = 0, i2 = 0, l1s = list1.size(), l2s = list2.size();
+    While (i1 < l1s || i2 < l2s)
+        If (i1 == l1s) While (i2 < l2s) mergedList.add (list2[i2++]);
+        Else If (i2 == l2s) While (i1 < l1s) mergedList.add (list1[i1++]);
+        Else If (list1[i1] > list2[i2]) mergedList.add (list2[i2++]);
+        Else mergedList.add (list1[i1++]);
+    Return mergedList;
+}
