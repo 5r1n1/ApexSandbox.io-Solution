@@ -1,0 +1,4 @@
+public static void segregateEvenOdd(List<Integer> numbers){
+    For (Integer i = 1; i < numbers.size(); i++)
+        If (Math.mod(numbers[i], 2) == 0) numbers.add(0, numbers.remove(i));
+}
