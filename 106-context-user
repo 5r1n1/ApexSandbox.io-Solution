@@ -1,0 +1,23 @@
+public Map<String,String> getContextUserInformation(){
+    Map<String,String> result = new Map<String,String>();
+    result.put('EmailId', UserInfo.getUserEmail());
+    result.put('ProfileId', UserInfo.getProfileId());
+    result.put('Type', UserInfo.getUserType());
+    result.put('UserName', UserInfo.getUserName());
+    // result.put('CurrentUvid', UserInfo.getCurrentUvid());
+    // result.put('DefaultCurrency', UserInfo.getDefaultCurrency());
+    // result.put('FirstName', UserInfo.getFirstName());
+    // result.put('Language', UserInfo.getLanguage());
+    // result.put('LastName', UserInfo.getLastName());
+    // result.put('Locale', UserInfo.getLocale());
+    // result.put('Name', UserInfo.getName());
+    // result.put('OrganizationId', UserInfo.getOrganizationId());
+    // result.put('OrganizationName', UserInfo.getOrganizationName());
+    // result.put('SessionId', UserInfo.getSessionId());
+    // result.put('TimeZone', UserInfo.getTimeZone());
+    // result.put('UiTheme', UserInfo.getUiTheme());
+    // result.put('UiThemeDisplayed', UserInfo.getUiThemeDisplayed());
+    // result.put('UserId', UserInfo.getUserId());
+    // result.put('UserRoleId', UserInfo.getUserRoleId());
+    return result;
+}
