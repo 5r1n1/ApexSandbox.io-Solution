@@ -1,0 +1,7 @@
+public Integer maxProfit(List<Integer> prices){
+    Integer len = prices.size(), maxPr = 0;
+    For (Integer i = 0; i < len-1; i++)
+        For (Integer j = i; j < len; j++)
+            maxPr = Math.max (prices[j] - prices [i], maxPr);
+    Return maxPr;
+}
