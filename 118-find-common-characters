@@ -1,0 +1,13 @@
+public List<String> commonChars(List<String> strs){
+    List<String> result = new List<String>();
+	List<List<String>> llstr = new List<List<String>>();
+	For (String str: strs) llstr.add(str.split(''));
+    For (String ch: llstr[0]) {
+        Boolean inAll = True;
+        For (Integer i = 1; i < llstr.size() && inAll; i++)
+            If (llstr[i].contains(ch)) llstr[i].remove(llstr[i].indexOf(ch));
+            Else inAll = False;
+        if (inAll) result.add(ch);
+    }
+    return result;
+}
