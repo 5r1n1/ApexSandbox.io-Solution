@@ -1,0 +1,18 @@
+public static Boolean sameString(String str1, String str2){
+    Return processBackspace(str1) == processBackspace(str2);
+}
+
+public String processBackspace (String str) {
+    List<String> lStr = str.split('');
+    For (integer i = 0; i < lStr.size(); i++)
+        if (lStr[i] == '#')
+            if (i == 0) {
+                lStr.remove(0);
+                i--;
+            } else {
+                lStr.remove(i-1);
+                lStr.remove(i-1);
+                i -= 2;
+            }
+    Return String.join(lstr, '');
+}
