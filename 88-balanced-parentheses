@@ -1,0 +1,22 @@
+public Boolean isValid(String s){
+    List<String> lifo = new List<String>();
+    String ch = s.left(1), prv, cur;
+    If (!ch.containsany ('([{')) Return False;
+    lifo.add(ch);
+    For (Integer i = 1; i < s.length(); i++) {
+        cur = s.substring (i, i+1);
+        If (cur.containsany ('([{')) { 
+			lifo.add (cur); 
+			continue;
+		}
+        If (lifo.size() > 0) prv = lifo[lifo.size()-1];
+		Else Return False;
+        If ((prv == '(' && cur == ')') ||
+            (prv == '[' && cur == ']') ||
+            (prv == '{' && cur == '}')) 
+                lifo.remove(lifo.size()-1);
+        Else Return False;
+    }
+    If (lifo.size() > 0) Return False; 
+    Else Return True;
+}
