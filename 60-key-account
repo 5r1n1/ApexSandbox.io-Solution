@@ -1,0 +1,7 @@
+public Boolean isKeyAccount(Account a) {
+    Decimal ar =  (Decimal) a.AnnualRevenue;
+    If (a.Industry == 'Banking' && ar < 600000) Return False;
+    If (a.Industry == 'Technology' && ar < 800000) Return False;
+    If (a.Industry == 'Retail' && ar < 2000000) Return False;
+    Return ar >= 500000;
+}
