@@ -1,0 +1,6 @@
+public void linkParent(Case c1, Case c2) {
+    If (c1?.ContactId == Null || c1?.ContactId != c2?.ContactId) Return;
+    If (c1.CreatedDate == c2.CreatedDate) Return;
+    If (c1.CreatedDate < c2.CreatedDate) c2.ParentId = c1.Id;
+    Else c1.ParentId = c2.Id;
+}
