@@ -1,0 +1,3 @@
+public Boolean containsDuplicates(List<Integer> nums) {
+    Return new Set<Integer>(nums).size() != nums.size();
+}
