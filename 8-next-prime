@@ -1,0 +1,11 @@
+public Integer nextPrime(Integer num) {
+    if (num < 2) return 2;
+    Boolean isPrime = False;
+    Integer i, p;
+    for (p = num + 1; !isPrime; p++) {
+        for (i = 2; i < p; i++)
+            if (math.mod(p, i) == 0) break;
+        if (i == p) isPrime = True;
+    }
+    return p-1;
+}
